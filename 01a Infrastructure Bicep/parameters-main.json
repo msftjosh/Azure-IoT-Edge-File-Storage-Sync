@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workloadName": {
+      "value": "demo-iot-hub"
+    },
+    "iotHubSkuName": {
+      "value": "S1"
+    },
+    "iotHubSkuUnits": {
+      "value": 1
+    },
+    "allowedIpPrefixes" : {
+      "value": [ "1.1.1.1" ]
+    },
+    "registrySku" : {
+      "value": "Standard"
+    },
+    "storageAccountSku" : {
+      "value": "Standard_LRS"
+    }
+  }
+}
