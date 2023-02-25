@@ -40,4 +40,4 @@
 1. Click Create
 1. After the New Module is online you should see files in the Syncronized Cloud Hosted Storage Account Blob Container.
 ## Cleanup\Tuning
-1. Once Complete it is recommend to go back into the Set modules for the IoT edge Device and either Delete the Pull HTTP File Module or ensure it is set to a proper interval to not create too many files.
+1. Once Complete it is recommend to go back into the Set modules for the IoT edge Device and either Delete the Pull HTTP File Module, set the "Desired Status" to "Stopped" or ensure it is set to a proper interval to not create too many files in your storage account.
