@@ -13,7 +13,7 @@
 ## Configure Module for IoT Edge Device
 1. In portal open up the IoT Hub resource >> Devices >> Select the IoT Edge Device >> Set modules >> + Add "IoT Edge Module"
 1. Give the module a name like pullhttpfileputblob
-1. On the Settings tab set the Image URL to:
+1. On the Settings tab set the Image URL to (or applicable name based on image built above):
     ```
     <ACRName>.azurecr.io/pull-http-file-put-blob:v1
     ```
