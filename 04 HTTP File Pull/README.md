@@ -5,6 +5,10 @@
     ```azurecli
     az acr build --image pull-http-file-put-blob:v1 --registry <ACRName> --file Dockerfile .
     ```
+    For ARMv7:
+    ```azurecli
+    az acr build --image pull-http-file-put-blob-armv7:v1 --platform linux/arm/v7 --registry <ACRName> --file Dockerfile-ARMv7 .
+    ```
 
 ## Configure Module for IoT Edge Device
 1. In portal open up the IoT Hub resource >> Devices >> Select the IoT Edge Device >> Set modules >> + Add "IoT Edge Module"
