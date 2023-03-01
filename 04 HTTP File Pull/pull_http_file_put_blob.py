@@ -29,6 +29,13 @@ if preserve_filename:
 else:
   filename=set_filename_prefix
 
+blob_service_client = BlobServiceClient.from_connection_string(blob_conn_str)
+container_client = blob_service_client.get_container_client(blob_container_name)
+
+if not container_client.exists():
+  container_client.create_container()
+  print('Blob Container does not exist. Creating...')
+
 def get_http_file():
   response = requests.get(file_url, allow_redirects=True)
   timestamp = time.strftime('%Y-%m-%dT%H%M%S', time.localtime())
